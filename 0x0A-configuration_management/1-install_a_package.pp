@@ -16,3 +16,10 @@ package { 'flask':
   provider => 'pip',
   require  => Package['python3-pip'],
 }
+
+# Install Werkzeug flask package
+package { 'werkzeug':
+  ensure   => '2.1.1',
+  provider => 'pip',
+  require  => Package['python3-pip'],
+}
